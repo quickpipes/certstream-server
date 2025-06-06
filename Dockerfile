@@ -16,6 +16,7 @@ ADD mix.lock ./
 
 RUN mix do deps.get, deps.compile
 
+COPY frontend/ /opt/app/frontend/dist/
 COPY config/ /opt/app/config/
 
 COPY lib /opt/app/lib/
